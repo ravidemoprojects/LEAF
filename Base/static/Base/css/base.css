@@ -1,0 +1,40 @@
+.leaf{
+    color: Green;
+    padding-right: 0%;
+    
+
+}
+.jumbotron{
+    padding: 0.1em 0.1em;
+    background-color: #c0eb91;
+}
+
+.nav-link{
+    color: black;
+    font-weight: 600;
+
+}
+.footer{
+    background-color: #c0eb91;
+}
+
+.yo{
+    color: black;
+    
+
+}
+.yol{
+    color: black;
+}
+li{
+    display: inline-block;
+}
+.logo{
+    height: 350px;
+}
+
+.sites{
+    height: 100px;
+    
+}
+

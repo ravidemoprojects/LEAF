@@ -1,0 +1,58 @@
+{% extends 'Base/base.html' %}
+{% load static %}
+  
+{% block title %} Home {% endblock title %}
+
+{% comment %} This is the content area {% endcomment %}
+{% block content %} 
+
+<div class="container text-center">
+    <img class='logo' src="{% static 'Base/images/logo.jpg' %}" alt="Not avaliable">
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-12"></div>
+        <div class="col-lg-4 col-sm-12 ">
+            <form action="" method="POST">{% csrf_token %}
+    
+                {{form.as_p}}
+                <button type="submit" class="btn btn-success">Submit</button>
+            
+            </form>
+            
+        </div>
+    
+    </div>
+
+    
+
+    
+</div><br>
+{% endblock content %}
+
+{% block bfooter %}
+
+<div class='text-center mt-5'>
+<h2>Sites on which we keep an eye for years</h2><hr>
+<div class="container">
+    <div class="row py-5">
+       <div class="col-lg-4 col-md-6 col-sm-12 ">
+           <img class='sites' src="{% static 'Base/images/amazon.png' %}" alt="">
+       </div>
+       <div class="col-lg-4 col-md-6 col-sm-12">
+           <img class='sites' src="{% static 'Base/images/flipkart.jpg' %}" alt="">
+       </div>
+       <div class="col-lg-4 col-md-6 col-sm-12">
+           <img class='sites' src="{% static 'Base/images/nykaa.png' %}" alt="">
+           
+       </div>
+    </div>
+    <h6 class='text-center'>Terms&Conditions Apply</h6>
+    <small class="mr-2">Designed By</small><a href="www.linkedin.com"><span>Ravi</span></a><span class="ml-4"> &copy; 2020-21</span>
+</div>
+
+</div>
+
+
+
+
+{% endblock bfooter %}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Base/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Base/css/bootstrap.css' %}">
+     <link rel="stylesheet" href="{% static 'Base/css/base.css' %}">
+     {% block css %} {% endblock css %}
+    <title>{% block title %} {% endblock title %}</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <a class=' navbar-brand leaf pt-4 px-3 ' href="{% url 'home' %}"><i class="fas fa-leaf fa-3x "></i> <h4 class='d-inline '>LEAF</h4></a> 
+            
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link " href="{% url 'home' %}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="#">HELP</a>
+                </li>
+            </ul>
+            
+            
+        </div>
+    </div>
+
+    {% block content %} {% endblock content %}
+
+    <div class='footer'>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="#"><h5 class='text-center  mt-5 yo'>How it Works</h5></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                <h5 class='mt-2'>Follow Us</h5><hr>
+                <div class='text-center  fa-2x my-3'>
+                    <a href="https://www.instagram.com/m_ravi_2812/"><i class="fab fa-instagram mx-5"></i></a>
+                    <a href="https://twitter.com/explore"><i class="fab fa-twitter mx-5"></i></a>
+                </div>
+                
+                
+            </div>
+
+            <div class="col-lg-4 md-6 sm-12">
+            <div class='text-center text-success fa-2x mt-4 ml-5 '>
+                <ul  class='list-unstyled'>
+                    <li> <a href="#"><h5 class='yo mr-5 '>Contact Us</h5></a></li>
+                    <li> <a href="#"><h5 class='yol mr-5 '>About Us</h5></a></li>
+                </ul>
+                
+            </div>
+                
+            </div>
+
+            
+        </div>
+    
+    </div>
+    {% block bfooter %} {% endblock bfooter %}
+    
+    </div>
+ 
+    
+
+
+
+
+
+
+
+    <script>{% static 'Base/js/jquery.js' %}</script>
+    <script>{% static 'Base/js/bootstrap.js' %}</script>
+    <script>{% static 'Base/js/popper.js' %}</script>
+    <script>{% static 'Base/js/all.min.js' %}</script>
+    
+    
+</body>
+</html>
